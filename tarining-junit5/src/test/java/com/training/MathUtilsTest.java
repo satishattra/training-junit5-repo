@@ -1,6 +1,6 @@
 package com.training;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
@@ -8,7 +8,10 @@ class MathUtilsTest {
 
 	@Test
 	void test() {
-		System.out.println("This is a test run");
+		MathUtils mathUtils = new MathUtils();
+		int expected = 2;
+		int actual = mathUtils.add(1, 1);
+		assertEquals(expected, actual);
 	}
 
 }
